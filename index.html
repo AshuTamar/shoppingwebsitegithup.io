@@ -1,569 +1,343 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My awesome food store</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SK Book - The Best Graphic Designer & Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <div class="nav-background">
-            <div class="mobile-logo">
-                <img src="" alt="">
-            </div>
-            <div class="mobile-nav">
-                <div class="cart">
-                    <div class="flex items-center">
-                        <img src="./icons/cart-dark.svg" alt="">
-                        <a href="#">0 Items - (0.00)</a>
-                    </div>
-                </div>
-                <div class="nav-top">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="#">Log in</a>
-                        </li>
-                        <li>
-                            <a href="#">Register</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact flex items-center">
-                    <img src="./icons/phone.svg" alt="">
-                    <div>
-                        <h5>Fresh Nature</h5>
-                        <h6></h6>
-                    </div>
-                </div>
-                <div class="time flex items-center">
-                    <img src="./icons/clock.svg" alt="">
-                    <div>
-                        <h5>Fresh Nature</h5>
-                        <h6></h6>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-book-reader fa-2x mx-3"></i>SK Book Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME
+                <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICE</a>
+            </li>
+             
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
-        <div class="site-content-wrapper">
-            <div class="nav-trigger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-bar-chart">
-                    <line x1="12" y1="20" x2="12" y2="10" />
-                    <line x1="18" y1="20" x2="18" y2="4" />
-                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
-            </div>
-            <div class="site-content">
-                <header class="topbar">
-                    <div class="container flex justify-between items-center">
-                        <div class="icons">
-                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
-                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
-                            <a href="#"><img src="./icons/google.svg" alt=""></a>
-                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
-                            <a href="#"><img src="./icons/search.svg" alt=""></a>
-                        </div>
-                        <div class="auth flex items-center">
-                            <div>
-                                <img src="./icons/user-icon.svg" alt="">
-                                <a href="#">Log in</a>
-                            </div>
-                            <span class="divider">|</span>
-                            <div>
-                                <img src="./icons/edit.svg" alt="">
-                                <a href="#">Register Now</a>
-                            </div>
-                            <span class="divider">|</span>
-                            <div>
-                                <img src="./icons/cart.svg" alt="">
-                                <a href="#">0 Items - ($0.00)</a>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <nav>
-                    <div class="top">
-                        <div class="container flex justify-between">
-                            <div class="contact flex items-center">
-                                <img src="./icons/phone.svg" alt="">
-                                <div>
-                                    <h5>Call Us</h5>
-                                    <h6>7838185978</h6> 
-                                </div>
-                            </div>
-                            <div class="branding">
-                                <img src="" alt="">
-                                <h1>Fresh Nature</h1>
-                            </div>
-                            <div class="time flex items-center">
-                                <img src="./icons/clock.svg" alt="">
-                                <div>
-                                    <h5>Working Hours:</h5>
-                                    <h6>Mon - Sat</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar magic-shadow">
-                        <div class="container flex justify-center">
-                            <a href="#" class="active">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Products</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Shop</a>
-                            <a href="#">Services</a>
-                            <a href="#">Gallery</a>
-                            <a href="#">Contact us</a>
-                        </div>
-                    </div>
-                </nav>
-
-                <header class="hero flex items-center">
-                    <div class="container">
-                        <div class="welcome flex items-center">
-                            <span>Welcome to</span>
-                            <img src="" alt="">
-                        </div>
-                        <h1>The World Best <span>Shoping</span> Website</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
-                        <div>
-                            <button class="btn btn-primary">Read More</button>
-                            <button class="btn btn-secondary">Shop Now</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </header>
-
-                <section class="top-products">
-                    <div class="container">
-                        <h1 class="section-heading">Top products</h1>
-                        <div class="slider">
-                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
-                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
-                            <div class="food-slider">
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-1.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Summer Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                             125
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-2.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Russian Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                             125
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Greek Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                             125
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Cottage pie</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                             125
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center btn-wrapper">
-                            <button class="btn btn-secondary">View More</button>
-                        </div>
-                    </div>
-                </section>
-                <section class="about-meal">
-                    <div class="container">
-                        <h1 class="section-heading">About Fresh Nature</h1>
-                        <div class="about-meal-wrap flex">
-                            <div class="flex-1">
-                                <img src="./images/yogurt.png" alt="">
-                            </div>
-                            <div class="flex-1">
-                                <h2>Freshmeal is a long established fact that a reader will be distracted</h2>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece of
-                                    classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                    McClintock, a
-                                    Latin professor at Hampden Sydney College in Virginia, The standard chunk of Lorem
-                                    Ipsum used
-                                    since the 1500s is reproduced below for those interested.</p>
-                                <button class="btn btn-secondary">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="our-services">
-                    <div class="container">
-                        <h1 class="section-heading">Our services</h1>
-                        <div class="card-wrapper flex">
-                            <div class="service-card magic-shadow-sm">
-                                <img class="icon" src="./icons/transport.svg" alt="">
-                                <h2>Free Home delivery</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-secondary">Read More</button>
-                            </div>
-                            <div class="service-card magic-shadow-sm">
-                                <img class="icon" src="./icons/bag.svg" alt="">
-                                <h2 class="text-primary">30 Days ReturnServices</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-primary">Read More</button>
-                            </div>
-                            <div class="service-card magic-shadow-sm">
-                                <img class="icon" src="./icons/usd.svg" alt="">
-                                <h2>Money Back Guaranted</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-secondary">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="big-deal">
-                    <div class="container">
-                        <h1 class="section-heading text-pure">Big Deals of the Week</h1>
-                        <div class="timer">
-                            <div>
-                                <span>02</span>
-                                <span>Days</span>
-                            </div>
-                            <div>
-                                <span>24</span>
-                                <span>Hours</span>
-                            </div>
-                            <div>
-                                <span>55</span>
-                                <span>Minutes</span>
-                            </div>
-                            <div>
-                                <span>58</span>
-                                <span>Seconds</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="latest-news">
-                    <div class="container">
-                        <h1 class="section-heading">Lastest News from Blog</h1>
-                        <div class="article-wrapper">
-                            <article class="card magic-shadow-sm">
-                                <div>
-                                    <img src="./images/coffee.jpg" alt="">
-                                </div>
-                                <div class="card-content">
-                                    <div class="post-meta flex items-center justify-between">
-                                        <span>July 03, 2017</span>
-                                        <div>
-                                            <span>Posted by <strong>FreshNature</strong></span>
-                                            <span class="comment-count">12 Comments</span>
-                                        </div>
-                                    </div>
-
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a
-                                        page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                        more
-                                        letters.</p>
-                                </div>
-                            </article>
-                            <article class="card magic-shadow-sm">
-                                <div>
-                                    <img src="./images/donut.jpg" alt="">
-                                </div>
-                                <div class="card-content">
-                                    <div class="post-meta flex items-center justify-between">
-                                        <span>July 03, 2017</span>
-                                        <div>
-                                            <span>Posted by <strong>FreshNature</strong></span>
-                                            <span class="comment-count">12 Comments</span>
-                                        </div>
-                                    </div>
-
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a
-                                        page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                        more
-                                        letters.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="text-center btn-wrapper">
-                            <button class="btn btn-secondary">View All</button>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="subscribe">
-                    <div class="container flex items-center">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <h1>Subscribe to your newsletter</h1>
-                            <p>Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
-                                web sites
-                                still in their infancy.</p>
-                            <div class="input-wrap">
-                                <input type="email" placeholder="ashutamar606@gmail.com">
-                                <button>Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="contact-us flex">
-                    <div class="contact-info-wrapper">
-                        <h1 class="section-heading">Contact us</h1>
-                        <div class="contact-info">
-                            <div>
-                                <div>
-                                    <img src="./icons/phone-2.svg" alt="">
-                                    <div>
-                                        <span>Call us:</span>
-                                        <span>7838185978</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./icons/bag-2.svg" alt="">
-                                    <div>
-                                        <span>E-mail ::</span>
-                                        <span>ashutamar606@gmailcom.com</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./icons/clock-2.svg" alt="">
-                                    <div>
-                                        <span>Working Hours:</span>
-                                        <span>Mon - Sat </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206253.45012861438!2d-115.31508258571672!3d36.124918453865035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20NV%2C%20USA!5e0!3m2!1sen!2sru!4v1580850940897!5m2!1sen!2sru"
-                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </section>
-
-                <footer>
-                    <div class="container">
-                        <div class="box">
-                            <h3>About us</h3>
-                            <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
-                                passage.</p>
-                            <button class="btn btn-secondary">Read More</button>
-                        </div>
-                        <div class="box">
-                            <h3>Quik Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact us</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <h3>Follow Us</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/codersgyan">
-                                            <img src="./icons/facebook.svg" alt="">
-                                            <span>Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/CoderGyan">
-                                            <img src="./icons/twitter.svg" alt="">
-                                            <span>Twitter</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="./icons/google.svg" alt="">
-                                            <span>Google +</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/codersgyan/">
-                                            <img src="./icons/instagram.svg" alt="">
-                                            <span>Instagram</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="box instagram-api">
-                            <h3>Instagram</h3>
-                            <div class="post-wrap">
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="./images/food-table.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <footer class="copyright">
-                    <div>
-                        Copyright © 2020 .All rights reserved by <a href="https://www.instagram.com/ashu_tamar/">Decent Engineer/Electattechnologies.com</a>.
-                    </div>
-                </footer>
-            </div>
-        </div>
+      </nav>
     </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+          <h6>Authors Book</h6>
+          <h1>EXCITING ADVENTURE</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi expedita.
+          </p>
+          <button class="btn btn-light px-5 py-2 primary-btn">
+            <a href="tel:9818640149" style="color: black; font-size: 18px;" > Buy Now</a>
+          </button>
+        </div>
+        <div class="col-md-5 col-sm-12  h-25">
+          <img src="../assets/header-img.png" alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <img src="../assets/pexels-photo-1904769.jpeg" alt="Pray" class="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left">
+              <h1>Mr. Lakshim Narayan</h1>
+              <p class="pt-4">
+                A Lakshim Narayan is a Great And 10 Years Of Experience In Graphic Design and Publishing Sector.
+              </p>
+              <p>
+                
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2 container-fluid p-0">
+      <div class="cover">
+        <div class="overlay"></div>
+        <div class="content text-center">
+          <h1>Some Features That Made Us Unique</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum?
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+          <div class="rect">
+            <h1>25</h1>
+            <p>Happy Client</p>
+          </div>
+          <div class="rect">
+            <h1>61</h1>
+            <p>Cups Coffee</p>
+          </div>
+          <div class="rect">
+            <h1>10</h1>
+            <p>Tickets Submitted</p>
+          </div>
+          <div class="rect">
+            <h1>91</h1>
+            <p>Total Projects</p>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="purchase text-center">
+        <h1>Purchase Whatever You Want</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">PDF</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1> ₹200</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">E-book</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1> ₹200</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Print Copy</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1> ₹550</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3 container-fluid p-0 text-center">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1>Download Our App for all Platform</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod possimus odit
+            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto unde
+            eaque nostrum nobis voluptatum
+          </p>
+        </div>
+      </div>
+      <div class="platform row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">Desktop</h3>
+                <p class="p-0 m-0">On website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-left">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">On Mobile</h3>
+                <p class="p-0 m-0">On Play Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div class="container text-center">
+        <h1 class="text-dark">What our Reader's Say about us</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/UI-face-3.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Blalock Jolene</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/UI-face-1.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Allen Agnes</h3>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/UI-face-2.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Ashu Tamar</h3>
+                        <p class="card-text">
+                           The Best Uttam Nagar Graphic And Book Store And My Recommendation For You Guys!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Delhi NCR</a>
+                        <p class="text-black-50">Technical Manager -ELELCTAT</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/UI-face-4.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Olivia Louis</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">The Uttam Nagar's Best Graphic And Book Designer And Store</p>
+          <p class="pt-4 text-muted">Copyright ©2021 All rights reserved | This template is made with by
+              <a href="https://www.instagram.com/electattechnologies/">#</a> <span> ELECTAT TECHNOLOGIES PVT LTD</span> 
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
